@@ -1,6 +1,7 @@
 
 
 
+
 (function (){
 
 
@@ -9,10 +10,15 @@
  
   for (var i = 0; i < names.length; i++) {
 
-
-    names[i].charAt(0).toLowerCase() === 'j' ? byeSpeaker.speak(names[i]) : helloSpeaker.speak(names[i]);
+    if ( names[i].charAt(0).toLowerCase() === 'j')
+   byeSpeaker.speak(names[i]) 
+  
+  else {
+    helloSpeaker.speak(names[i]);
+  } 
   }
     
   
 
 }());
+
